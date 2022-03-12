@@ -1,0 +1,59 @@
+@import './reset.scss';
+$메인칼라 : #ff0000;
+
+.red {
+    color : $메인칼라;
+}
+
+.my-alert {
+    background : #eeeeee;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.my-alert2 {
+    @extend .my-alert; // my-alert의 모든 속성을 복사붙여넣기
+    background: #ffe591;
+}
+
+
+@mixin 함수() {
+    background : #4d2222;
+    color : #eeeeee;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.my-alert3 {
+    @include 함수()
+}
+
+.my-alert3 p {
+    margin-bottom: 0;
+}
+/*
+div.container h4 {
+    color : blue;
+}
+
+div.container p {
+    color : green;
+}
+
+
+// div.container 안에 있는 h4 셀렉터, 하위 셀렉터 UI CSS 입힐 때 보기 더 편할 듯
+div.container {
+    h4 {
+        color : blue;
+    }
+    p {
+        color : green;
+    }
+}
+*/

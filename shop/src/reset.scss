@@ -1,0 +1,9 @@
+// 모든 파일에 필요한 CSS
+// import용 css파일의 경우 _rest.css 언더바를 사용해 작명
+body {
+    margin : 0;
+}
+
+div {
+    box-sizing: border-box;
+}
